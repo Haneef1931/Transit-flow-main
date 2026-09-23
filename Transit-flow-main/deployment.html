@@ -4,111 +4,142 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hub 01</title>
+    <title>Hub 01 Deployment</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
-<body>
-    <div>
-        <div class="navigation-section">
-            <h1 class="navigation-title">City Central</h1>
-            <h3 class="navigation-title">District Hub 01</h3>
+<body class="dashboard-body">
+    <div class="sidebar">
+        <div class="sidebar-header">
+            <h1 class="sidebar-title">City Central</h1>
+            <h3 class="sidebar-subtitle">District Hub 01</h3>
         </div>
-        <div>
-            <img class="navigation-image" src="./images/squares.png">
-            <a class="navigation-link">Dashboard</a>
+        <div class="sidebar-nav">
+            <a class="sidebar-link"><img class="sidebar-icon" src="./images/squares.png"> Dashboard</a>
+            <a class="sidebar-link active"><img class="sidebar-icon" src="./images/truck.png"> Fleet Dispatch</a>
+            <a class="sidebar-link"><img class="sidebar-icon" src="./images/signal.png"> Live Tracking</a>
+            <a class="sidebar-link"><img class="sidebar-icon" src="./images/wrench.png"> Maintenance</a>
+            <a class="sidebar-link"><img class="sidebar-icon" src="./images/wrench.png"> Analytics</a>
+            <a class="sidebar-link"><img class="sidebar-icon" src="./images/settings.png"> Settings</a>
         </div>
-        <div class="navigation-section">
-            <img class="navigation-image" src="./images/truck.png">
-            <a class="navigation-link">Fleet Dispatch</a>
+        <div class="sidebar-actions">
+            <button class="btn-primary sidebar-btn">New Dispatch</button>
         </div>
-        <div class="navigation-section">
-            <img class="navigation-image" src="./images/signal.png">
-            <a class="navigation-link">Live Tracking</a>
-        </div>
-        <div class="navigation-section">
-            <img class="navigation-image" src="./images/wrench.png">
-            <a class="navigation-link">Analytics</a>
-        </div>
-        <div class="navigation-section">
-            <img class="navigation-image" src="./images/settings.png">
-            <a class="navigation-link">Settings</a>
-        </div>
-        <div class="navigation-section">
-            <button class="navigation-button">New Dispatch</button>
-        </div>
-        <div class="navigation-section">
-            <img class="navigation-image" src="./images/question mark.png">
-            <a class="navigation-link">Help Center</a>
-        </div>
-        <div class="navigation-section">
-            <img class="navigation-image" src="./images/exit.png">
-            <a class="navigation-link">Logout</a>
+        <div class="sidebar-footer">
+            <a class="sidebar-link"><img class="sidebar-icon" src="./images/question mark.png"> Help Center</a>
+            <a class="sidebar-link"><img class="sidebar-icon" src="./images/exit.png"> Logout</a>
         </div>
     </div>
-    <div>
-        <div class="overview-section">
-            <h1 class="overview-title">Active Dispatch Matrix</h1>
-            <h3 class="overview-title">Real-time capacity and route flow visualization</h3>
+
+    <div class="main-content">
+        <div class="header-row">
+            <div>
+                <h1 class="page-title">Active Dispatch Matrix</h1>
+                <p class="page-subtitle">Real-time capacity and route flow visualization.</p>
+            </div>
+            <div class="status-badge system-optimal">
+                <span class="dot green-dot"></span> System Optimal
+            </div>
         </div>
-        <div class="overview-section">
-            <img class="overview-image" src="./images/live map.png">
+
+        <div class="dashboard-grid">
+            <div class="main-panel">
+                <div class="panel-header">
+                    <h2>Live Fleet Map</h2>
+                    <button class="btn-outline">Filter Routes</button>
+                </div>
+                <img class="map-image" src="./images/live map.png" style="width: 100%; border-radius: 8px;">
+            </div>
+
+            <div class="side-panel">
+                <h2>System Health</h2>
+                <div class="health-card">
+                    <div class="health-card-header">
+                        <img src="./images/brush.png" class="health-icon">
+                        <span>Automated UV Cleaning</span>
+                        <span class="health-value blue">84%</span>
+                    </div>
+                    <div class="progress-bar-bg">
+                        <div class="progress-bar-fill blue" style="width: 84%;"></div>
+                    </div>
+                </div>
+                <div class="health-card">
+                    <div class="health-card-header">
+                        <img src="./images/trashcan.png" class="health-icon">
+                        <span>Smart Bin Capacity</span>
+                        <span class="health-value">Avg 62%</span>
+                    </div>
+                    <div class="progress-bar-bg">
+                        <div class="progress-bar-fill green" style="width: 62%;"></div>
+                    </div>
+                </div>
+                <div class="info-card blue-bg">
+                    <p>Next Maintenance Window</p>
+                    <h2>02:30 AM</h2>
+                </div>
+            </div>
         </div>
-        <div class="overview-section">
-            <h3 class="overview-title">Fleet Dispatch</h3>
-        </div>
-        <div class="overview-section">
-            <img class="overview-image" src="./images/brush.png">
-            <p class="overview-description">Automated UV Cleaning</p>
-            <progress class="overview-progress" value="84" max="100"></progress>
-        </div>
-        <div class="overview-section">
-            <img class="overview-image" src="./images/trashcan.png">
-            <p class="overview-description">Smart Bin capacity</p>
-            <progress class="overview-progress" value="62" max="100"></progress>
-        </div>
-        <div class="overview-section">
-            <p class="overview-description">Next maintenance check</p>
-            <h1 class="overview-title">02:30</h1>
-        </div>
-        <div class="active-section">
-            <h2 class="active-title">Active Development</h2>
-            <a class="active-link"> View All</a>
-        </div>
-        <div class="active-section">
-            <h2 class="active-title">Unit ID</h2>
-        </div>
-        <div class="active-section">
-            <h2 class="active-title">Route</h2>
-        </div>
-        <div class="active-section">
-            <h2 class="active-title">Status</h2>
-        </div>
-        <div class="active-section">
-            <h2 class="active-title">Occupancy</h2>
-        </div>
-        <div class="active-section">
-            <h2 class="active-title">Action</h2>
-        </div>
-        <div class="active-section">
-            <h3 class="active-title">G-TRAM-402</h3>
-            <p class="active-description">Line c (Downtown loop)</p>
-            <button class="active-button">Active</button>
-            <progress class="active-progress" value="45" max="100"></progress>
-            <img class="active-image" src="./images/more.png">
-        </div>
-        <div class="active-section">
-            <h3 class="active-title">G-TRAM-118</h3>
-            <p class="active-description">Line A (North corridor)</p>
-            <button class="active-button">Delayed</button>
-            <progress class="active-progress" value="92" max="100"></progress>
-            <img class="active-image" src="./images/more.png">
-        </div>
-        <div class="active-section">
-            <h3 class="active-title">G-TRAM-773</h3>
-            <p class="active-description">Line B (East Lest Link)</p>
-            <button class="active-button">En Route</button>
-            <progress class="active-progress" value="78" max="100"></progress>
-            <img class="active-image" src="./images/more.png">
+
+        <div class="table-section">
+            <div class="table-header">
+                <h2>Active Deployments</h2>
+                <a class="view-all">View All</a>
+            </div>
+            <table class="data-table">
+                <thead>
+                    <tr>
+                        <th>Unit ID</th>
+                        <th>Route</th>
+                        <th>Status</th>
+                        <th>Occupancy</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>G-TRAM-402</strong></td>
+                        <td>Line C (Downtown Loop)</td>
+                        <td><span class="badge badge-active"><span class="dot green-dot"></span> Active</span></td>
+                        <td>
+                            <div class="occupancy-cell">
+                                <div class="progress-bar-bg small">
+                                    <div class="progress-bar-fill green" style="width: 45%;"></div>
+                                </div>
+                                <span>45%</span>
+                            </div>
+                        </td>
+                        <td><img class="action-icon" src="./images/more.png"></td>
+                    </tr>
+                    <tr>
+                        <td><strong>G-TRAM-118</strong></td>
+                        <td>Line A (North Corridor)</td>
+                        <td><span class="badge badge-delayed"><span class="dot red-dot"></span> Delayed</span></td>
+                        <td>
+                            <div class="occupancy-cell">
+                                <div class="progress-bar-bg small">
+                                    <div class="progress-bar-fill red" style="width: 92%;"></div>
+                                </div>
+                                <span>92%</span>
+                            </div>
+                        </td>
+                        <td><img class="action-icon" src="./images/more.png"></td>
+                    </tr>
+                    <tr>
+                        <td><strong>G-TRAM-773</strong></td>
+                        <td>Line B (East West Link)</td>
+                        <td><span class="badge badge-enroute"><span class="dot blue-dot"></span> En Route</span></td>
+                        <td>
+                            <div class="occupancy-cell">
+                                <div class="progress-bar-bg small">
+                                    <div class="progress-bar-fill yellow" style="width: 78%;"></div>
+                                </div>
+                                <span>78%</span>
+                            </div>
+                        </td>
+                        <td><img class="action-icon" src="./images/more.png"></td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
     </div>
 </body>

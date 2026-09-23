@@ -1,68 +1,95 @@
 <!DOCTYPE html>
-<html lang="en">
+,<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Transit flow</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
 <body>
     <div>
-        <div class="navigation-section">
-            <h1>Transit flow</h1>
+        <div class="navbar-section">
+            <p class="logo">Transit Flow</p>
             <a class="nav-links">Solutions</a>
             <a class="nav-links">Pricing</a>
             <a class="nav-links">Live map</a>
             <a class="nav-links">Resources</a>
-            <a class="nav-links">Login</a>
-            <button>Get started</button>
+            <div class="nav-actions">
+                <a class="nav-links login-link">Login</a>
+                <button class="btn-primary">Get started</button>
+            </div>
         </div>
         <div class="hero-section">
-            <img class="hero-image" src="./images/ROCKET.png">
-            <p class="hero-description">Next-gen Transit Solutions</p>
-            <h1 class="hero-title">Public Transit Reimagined</h1>
-            <p class="hero-description">Elevate urban mobility with AI-driven scheduling, dynamic capacity management,
-                and
-                upcompromising
-                cleanliness.Experience the future of city travel today.
-            </p>
-            <img class="hero-image" src="./images/tram.png">
-            <button class="hero-button">Request Demo</button>
-            <img class="hero-image" src="./images/pause.png">
-            <p class="hero-description">See how it Works</p>
+            <div class="hero-content">
+                <div class="pill">
+                    <img class="hero-icon" src="./images/ROCKET.png">
+                    <span>Next-gen Transit Solutions</span>
+                </div>
+                <h1 class="hero-title">Public Transit,<br>Reimagined.</h1>
+                <p class="hero-description">Elevate urban mobility with AI-driven scheduling, dynamic capacity
+                    management, and uncompromising cleanliness. Experience the future of city travel today.</p>
+                <div class="hero-actions">
+                    <button class="btn-secondary">Request Demo <span class="arrow">&rarr;</span></button>
+                    <div class="play-btn-container">
+                        <img class="play-icon" src="./images/pause.png">
+                        <span>See how it Works</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-image-container">
+                <img class="hero-main-image" src="./images/tram.png">
+            </div>
         </div>
         <div class="features-section">
-            <img class="feature-image" src="./images/brush.png">
-            <h1 class="feature-title">Engineered for Reliability
-            </h1>
-            <p class="feature-description">Core features designed to reduce friction and improve daily commute
-                experience
-                for modern cities.</p>
-            <p class="feature-description">Learn more</p>
-            <img class="feature-image" src="./images/blue arrow.png">
-            <img class="feature-image" src="./images/teams.png">
-            <h1 class="feature-title">Smart Cleanliness</h1>
-            <p class="feature-description">Integrated UV sanitation cycles deployed dynamicallly between peek hours to
-                ensure a pristine environment.
-            </p>
-            <p class="feature-description">View capacity specs</p>
-            <img class="feature-image" src="./images/green arrow.png">
-            <img class="feature-image" src="./images/tramblack.png">
-            <h1 class="feature-title">Zero Overcoding</h1>
-            <p class="feature-description">Strict 25-person capacity limits enforced via real-time sensory data and
-                automated ticking gates.</p>
-            <p class="feature-description">Explore routing Ai</p>
-            <img class="feature-image" src="./images/blue arrow.png">
+            <div class="features-header">
+                <h1 class="features-main-title">Engineered for Reliability</h1>
+                <p class="features-main-description">Core features designed to reduce friction and improve the daily
+                    commute experience for modern cities.</p>
+            </div>
+            <div class="features-cards">
+                <div class="feature-card">
+                    <div class="icon-circle">
+                        <img class="feature-image" src="./images/brush.png">
+                    </div>
+                    <h2 class="feature-title">Smart Cleanliness</h2>
+                    <p class="feature-description">Integrated UV sanitation cycles deployed dynamically between peak
+                        hours to ensure a pristine environment.</p>
+                    <a class="feature-link">Learn more &rarr;</a>
+                </div>
+                <div class="feature-card">
+                    <div class="icon-circle">
+                        <img class="feature-image" src="./images/teams.png">
+                    </div>
+                    <h2 class="feature-title">Zero Overcrowding</h2>
+                    <p class="feature-description">Strict 25-person capacity limits enforced via real-time sensory data
+                        and automated ticketing gates.</p>
+                    <a class="feature-link">View capacity specs &rarr;</a>
+                </div>
+                <div class="feature-card">
+                    <div class="icon-circle">
+                        <img class="feature-image" src="./images/tramblack.png">
+                    </div>
+                    <h2 class="feature-title">Dynamic Ghost Trams</h2>
+                    <p class="feature-description">Empty 'ghost' vehicles dispatched predictively to high-demand nodes
+                        before bottlenecks occur.</p>
+                    <a class="feature-link">Explore routing AI &rarr;</a>
+                </div>
+            </div>
         </div>
         <div class="footer-section">
-            <h1 class="footer-title">Transit Flow</h1>
-            <img class="footer-image" src="./images/Text.png">
+        <div class="footer-left">
+            <h1 class="footer-logo">TransitFlow</h1>
+            <p class="footer-copyright">&copy; 2024 TransitFlow Systems. Precision in Motion.</p>
+        </div>
+        <div class="footer-right">
             <a class="footer-link">Privacy Policy</a>
             <a class="footer-link">Terms of Service</a>
-            <a class="footer-link">compliance</a>
-            <a class="footer-link">SLA </a>
+            <a class="footer-link">Compliance</a>
+            <a class="footer-link">SLA</a>
         </div>
+    </div>
 </body>
 
 </html>
