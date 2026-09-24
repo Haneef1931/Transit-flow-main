@@ -7,124 +7,195 @@
     <title>Telemetry</title>
 </head>
 
-<body>
-    <div>
-        <div class="navigation-section"> >
-            <h1 class="navigation-title">City Central</h1>
+<body class="dashboard-body">
+    <div class="sidebar">
+        <div class="sidebar-header" style="padding-bottom: 20px;">
+            <h1 class="sidebar-title" style="margin-bottom: 20px;">City Central</h1>
+            <p class="sidebar-subtitle" style="margin: 0; margin-bottom: 20px;">District Hub 01</p>
+            <button class="btn-primary" style="width: 100%;">+ New Dispatch</button>
         </div>
-        <h3 class="navigation-title">District Hub 01</h3>
-        <button class="navigation-button">+New Dispatch</button>
+        <div class="sidebar-nav">
+            <a class="sidebar-link"><img class="sidebar-icon" src="./images/squares.png"> Dashboard</a>
+            <a class="sidebar-link"><img class="sidebar-icon" src="./images/truck.png"> Fleet Dispatch</a>
+            <a class="sidebar-link active"><img class="sidebar-icon" src="./images/signal.png"> Live Tracking</a>
+            <a class="sidebar-link"><img class="sidebar-icon" src="./images/wrench.png"> Maintenance</a>
+            <a class="sidebar-link"><img class="sidebar-icon" src="./images/wrench.png"> Analytics</a>
+            <a class="sidebar-link"><img class="sidebar-icon" src="./images/settings.png"> Settings</a>
+        </div>
+        <div class="sidebar-footer">
+            <a class="sidebar-link"><img class="sidebar-icon" src="./images/question mark.png"> Help Center</a>
+            <a class="sidebar-link"><img class="sidebar-icon" src="./images/exit.png"> Logout</a>
+        </div>
     </div>
-    <div>
-        <img src="./images/squares.png">
-        <a class="navigation-link">Dashboard</a>
-    </div>
-    <div class="navigation-section">
-        <img src="./images/truck.png">
-        <a class="navigation-link">Fleet Dispatch</a>
-    </div>
-    <div class="navigation-section">
-        <img src="./images/signal.png">
-        <a class="navigation-link">Live Tracking</a>
-    </div>
-    <div class="navigation-section">
-        <img class="navigation-image" src="./images/wrench.png">
-        <a class="navigation-link">Analytics</a>
-    </div>
-    <div class="navigation-section">
-        <img class="navigation-image" src="./images/settings.png">
-        <a class="navigation-link">Settings</a>
-    </div>
-    <div class="navigation-section">
-        <button class="navigation-button">New Dispatch</button>
-    </div>
-    <div class="navigation-section">
-        <img class="navigation-image" src="./images/question mark.png">
-        <a class="navigation-link">Help Center</a>
-    </div>
-    <div class="overview-section">
-        <h1 class="overview-title">Live Telemetry</h1>
-    </div>
-    <div class="overview-section">
-        <p class="overview-description">Real-time tracking for District Hub 01</p>
-    </div>
-    <div class="overview-section">
-        <button class="overview-button">System Online</button>
-    </div>
-    <div class="overview-section">
-        <img class="overview-image" src="./images/big signal.png">
-    </div>
-    <div class="overview-section">
-        <img class="overview-image" src="./images/many map.png">
-    </div>
-    <div class="overview-section">
-        <img class="overview-image" src="./images/stonks.png">
-    </div>
-    <div class="Fleet-Status-section">
-        <h1 class="Fleet-Status-title">Fleet Status</h1>
-    </div>
-    <div class="Fleet-Status-section">
-        <p class="Fleet-Status-description">Active Vehicles</p>
-        <h1 class="Fleet-Status-title">124</h1>
-    </div>
-    <div class="Fleet-Status-section">
-        <p class="Fleet-Status-description">Avg Velocity</p>
-        <h1 class="Fleet-Status-title">18</h1>
-        <p class="Fleet-Status-description">mph</p>
-    </div>
-    <div class="Fleet-Status-section">
-        <p class="Fleet-Status-description">Network load</p>
-    </div>
-    <div class="Fleet-Status-section">
-        <progress class="Fleet-Status-progress" value="78" max="100"></progress>
-    </div>
-    <div class="Fleet-Status-section">
-        <h1 class="Fleet-Status-title">Active Units</h1>
-        <p class="Fleet-Status-description">Live Sync</p>
-    </div>
-    <div class="Fleet-Status-section">
-        <img src="./images/tramblue.png">
-        <p class="Fleet-Status-description">Bus 42A - Express</p>
-        <p class="Fleet-Status-description">24mph</p>
-    </div>
-    <div class="Fleet-Status-section">
-        <img class="Fleet-Status-image" src="./images/location.png">
-        <h6 class="Fleet-Status-description"> 40.7128 N, 74.0060 W</h6>
-    </div>
-    <div class="Fleet-Status-section">
-        <p class="Fleet-Status-description">Occupancy</p>
-        <progress class="Fleet-Status-progress" value="85" max="100"></progress>
-    </div>
-    <div class="Fleet-Status-section">
-        <img class="Fleet-Status-image" src="./images/tramred.png">
-        <p class="Fleet-Status-description">Tram T9 (Ghost)</p>
-        <img class="Fleet-Status-image" src="./images/warning sign.png">
-        <p class="Fleet-Status-description">--mph</p>
-    </div>
-    <div class="Fleet-Status-section">
-        <img class="Fleet-Status-image" src="./images/tramblue.png">
-        <p class="Fleet-Status-description">Light Rail L2</p>
-        <h6 class="Fleet-Status-title">40.7306 N, 73.9866 W</h6>
-        <img class="Fleet-Status-image" src="./images/loction.png">
-        <p class="Fleet-Status-description"> 45mph</p>
-    </div>
-    <div class="Fleet-Status-section">
-        <p class="Fleet-Status-description">Occupancy</p>
-        <progress class="Fleet-Status-progress" value="30" max="100"></progress>
-    </div>
-    <div class="Fleet-Status-section">
-        <img class="Fleet-Status-image" src="./images/tramgrey.png">
-        <h3 class="Fleet-Status-title">Bus 128 - Local</h3>
-        <img class="Fleet-Status-image" src="./images/clock.png">
-    </div>
-    <div class="Fleet-Status-section">
-        <h1 class="Fleet-Status-title">Transit Flow</h1>
-        <img class="Fleet-Status-image" src="./images/Text.png">
-        <a class="Fleet-Status-link" href="#">Privacy Policy</a>
-        <a class="Fleet-Status-link" href="#">Terms of Service</a>
-        <a class="Fleet-Status-link" href="#">compliance</a>
-        <a class="Fleet-Status-link" href="#">SLA </a>
-    </div>
+
+    <div class="main-content" style="background-color: #f8faff; position: relative;">
+        <div class="header-row" style="margin-bottom: 20px;">
+            <div>
+                <h1 class="page-title">Live Telemetry</h1>
+                <p class="page-subtitle">Real-time tracking for District Hub 01</p>
+            </div>
+            <div style="display: flex; gap: 10px;">
+                <div class="status-badge" style="background-color: #e6fff0; color: #1ddb85;">
+                    <span class="dot green-dot"></span> System Online
+                </div>
+                <button
+                    style="border: 1px solid #ddd; background: white; border-radius: 50%; width: 36px; height: 36px; display: flex; align-items: center; justify-content: center; cursor: pointer;">
+                    <img src="./images/big signal.png" style="width: 16px;">
+                </button>
+            </div>
+        </div>
+
+        <div class="dashboard-grid">
+            <div class="main-panel" style="flex: 2; padding: 0; background: transparent; box-shadow: none;">
+                <img src="./images/many map.png"
+                    style="width: 100%; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.05);">
+            </div>
+
+            <div class="side-panel"
+                style="flex: 1; display: flex; flex-direction: column; gap: 20px; background: transparent; box-shadow: none; padding: 0;">
+
+                <div
+                    style="background: white; border-radius: 12px; padding: 20px; box-shadow: 0 2px 10px rgba(0,0,0,0.02);">
+                    <div class="panel-header" style="margin-bottom: 15px;">
+                        <div style="display: flex; align-items: center; gap: 8px;">
+                            <img src="./images/stonks.png" style="width: 16px;">
+                            <h2 style="font-size: 15px;">Fleet Status</h2>
+                        </div>
+                    </div>
+
+                    <div style="display: flex; gap: 10px; margin-bottom: 20px;">
+                        <div style="flex: 1; background-color: #f8f9fa; padding: 15px; border-radius: 8px;">
+                            <p style="font-size: 11px; color: #666; margin-bottom: 4px;">Active Vehicles</p>
+                            <h2 style="color: #0b45d0; font-size: 24px;">124</h2>
+                        </div>
+                        <div style="flex: 1; background-color: #f8f9fa; padding: 15px; border-radius: 8px;">
+                            <p style="font-size: 11px; color: #666; margin-bottom: 4px;">Avg Velocity</p>
+                            <h2 style="color: #111; font-size: 24px;">18<span
+                                    style="font-size: 12px; color: #666; font-weight: normal;">mph</span></h2>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div
+                            style="display: flex; justify-content: space-between; font-size: 12px; color: #666; margin-bottom: 8px;">
+                            <span>Network Load</span>
+                            <span>78%</span>
+                        </div>
+                        <div class="progress-bar-bg">
+                            <div class="progress-bar-fill blue"
+                                style="width: 78%; background: linear-gradient(90deg, #0b45d0, #6f9eff);"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div
+                    style="background: white; border-radius: 12px; padding: 20px; box-shadow: 0 2px 10px rgba(0,0,0,0.02);">
+                    <div class="panel-header" style="margin-bottom: 15px;">
+                        <h2 style="font-size: 15px;">Active Units</h2>
+                        <span
+                            style="background-color: #e6f0ff; color: #0b45d0; padding: 4px 10px; border-radius: 12px; font-size: 11px; font-weight: 500;">Live
+                            Sync</span>
+                    </div>
+
+                    <div style="display: flex; flex-direction: column; gap: 10px;">
+                        <div style="border: 1px solid #f0f0f0; border-radius: 8px; padding: 12px;">
+                            <div style="display: flex; justify-content: space-between; margin-bottom: 8px;">
+                                <div style="display: flex; align-items: center; gap: 8px;">
+                                    <div style="background: #f0f4f8; padding: 6px; border-radius: 6px;"><img
+                                            src="./images/tramblue.png" style="width: 14px;"></div>
+                                    <p style="font-weight: 600; font-size: 13px;">Bus 42A - Express</p>
+                                </div>
+                                <span style="color: #1ddb85; font-size: 12px; font-weight: 600;">24 mph</span>
+                            </div>
+                            <div
+                                style="display: flex; align-items: center; gap: 6px; color: #666; font-size: 10px; margin-bottom: 10px; padding-left: 34px;">
+                                <img src="./images/location.png" style="width: 8px;"> 40.7128° N, 74.0060° W
+                            </div>
+                            <div
+                                style="display: flex; align-items: center; justify-content: space-between; font-size: 10px;">
+                                <span style="color: #666;">Occupancy</span>
+                                <div style="width: 60%;">
+                                    <div class="progress-bar-bg small" style="width: 100%; height: 3px;">
+                                        <div class="progress-bar-fill green" style="width: 85%;"></div>
+                                    </div>
+                                </div>
+                                <span style="font-weight: 600;">85%</span>
+                            </div>
+                        </div>
+
+                        <div style="border: 1px solid #ffccc7; background: #fff1f0; border-radius: 8px; padding: 12px;">
+                            <div style="display: flex; justify-content: space-between; margin-bottom: 8px;">
+                                <div style="display: flex; align-items: center; gap: 8px;">
+                                    <div style="background: white; padding: 6px; border-radius: 6px;"><img
+                                            src="./images/tramred.png" style="width: 14px;"></div>
+                                    <p style="font-weight: 600; font-size: 13px; color: #cf1322;">Tram T9 (Ghost)</p>
+                                </div>
+                                <span style="color: #555; font-size: 12px;">-- mph</span>
+                            </div>
+                            <div
+                                style="display: flex; align-items: center; gap: 6px; color: #cf1322; font-size: 10px; padding-left: 34px;">
+                                <img src="./images/warning sign.png" style="width: 10px;"> Telemetry lost 2m ago
+                            </div>
+                        </div>
+
+                        <div style="border: 1px solid #f0f0f0; border-radius: 8px; padding: 12px;">
+                            <div style="display: flex; justify-content: space-between; margin-bottom: 8px;">
+                                <div style="display: flex; align-items: center; gap: 8px;">
+                                    <div style="background: #f0f4f8; padding: 6px; border-radius: 6px;"><img
+                                            src="./images/tramblue.png" style="width: 14px;"></div>
+                                    <p style="font-weight: 600; font-size: 13px;">Light Rail L2</p>
+                                </div>
+                                <span style="color: #1ddb85; font-size: 12px; font-weight: 600;">45 mph</span>
+                            </div>
+                            <div
+                                style="display: flex; align-items: center; gap: 6px; color: #666; font-size: 10px; margin-bottom: 10px; padding-left: 34px;">
+                                <img src="./images/location.png" style="width: 8px;"> 40.7306° N, 73.9866° W
+                            </div>
+                            <div
+                                style="display: flex; align-items: center; justify-content: space-between; font-size: 10px;">
+                                <span style="color: #666;">Occupancy</span>
+                                <div style="width: 60%;">
+                                    <div class="progress-bar-bg small" style="width: 100%; height: 3px;">
+                                        <div class="progress-bar-fill blue" style="width: 30%;"></div>
+                                    </div>
+                                </div>
+                                <span style="font-weight: 600;">30%</span>
+                            </div>
+                        </div>
+
+                        <div style="border: 1px solid #f0f0f0; border-radius: 8px; padding: 12px; opacity: 0.7;">
+                            <div style="display: flex; justify-content: space-between; margin-bottom: 8px;">
+                                <div style="display: flex; align-items: center; gap: 8px;">
+                                    <div style="background: #f8f9fa; padding: 6px; border-radius: 6px;"><img
+                                            src="./images/tramgrey.png" style="width: 14px;"></div>
+                                    <p style="font-weight: 500; font-size: 13px; color: #666;">Bus 12B - Local</p>
+                                </div>
+                                <span style="color: #888; font-size: 12px;">0 mph</span>
+                            </div>
+                            <div
+                                style="display: flex; align-items: center; gap: 6px; color: #666; font-size: 10px; padding-left: 34px;">
+                                <img src="./images/clock.png" style="width: 10px;"> Scheduled Departure
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-section"
+            style="margin-top: 40px; background: white; padding: 20px 40px; border-radius: 12px;">
+            <div class="footer-left" style="display: flex; align-items: center; gap: 40px;">
+                <h1 class="footer-logo" style="font-size: 16px; margin: 0;">TransitFlow</h1>
+                <p class="footer-copyright" style="color: #888; font-size: 11px; margin: 0;">&copy; 2024 TransitFlow
+                    Systems. Precision in Motion.</p>
+            </div>
+            <div class="footer-right">
+                <a class="footer-link">Privacy Policy</a>
+                <a class="footer-link">Terms of Service</a>
+                <a class="footer-link">Compliance</a>
+                <a class="footer-link">SLA</a>
+            </div>
+        </div>
     </div>
 </body>
 
